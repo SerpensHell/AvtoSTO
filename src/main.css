@@ -1,0 +1,360 @@
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+header {
+    padding: 0 16px;
+    background: #FFECDA;
+    min-height: 40px;
+    border:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+}
+
+.header-content {
+    padding: 0;
+}
+
+.header-content .top-menu {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       position: relative;
+}
+
+.header-content .top-menu .logo-left {
+    display: flex;
+    align-items: center;
+    padding: 2px 30px;
+    border-radius: 4px;
+}
+
+.logo-left img {
+    max-height: 70px;
+    width: auto;
+}
+
+.nav-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.nav-navbar li {
+     list-style-type: none;
+}
+
+.search-field {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+}
+
+.header-search {
+     width: 300px;
+     vertical-align: middle;
+     white-space: nowrap;
+}
+
+.header-search input {
+    width: 300px;
+    height: 50px;
+    background: #ffffff;
+    border: none;
+    font-size: 10pt;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.header-search .search-icon {
+    position: absolute;
+    top: 35%;
+    margin-left: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.notification {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.notification button{
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    background: transparent;
+    transition-duration: 0.4s;
+}
+
+.notification button:hover {
+    background-color: #FECEA8;
+    color: white;
+}
+
+.notification-icon {
+    display: flex;
+    width: 40px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.account {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.account button {
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    background: transparent;
+}
+
+.account-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.account  img {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.content {
+    min-height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.left-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.left-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s, left 0.3s;
+    z-index: 600;
+    width: 220px;
+    top: var(--header-height, 0px);
+    background-color: #F5F5F5;
+    transform: translate3d(0, 0, 0);
+}
+
+.left-menu li {
+   margin: 0;
+   padding: 30px 30px;
+   font-family: 'Nunito', sans-serif;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   font-size: 18px;
+}
+
+.left-menu li:hover {
+    background-color: #e0e0e5;
+}
+
+.left-menu a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.board {
+     margin-left: 220px;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+}
+
+.tasks-list {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100%;
+    margin: 0;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.board .column {
+    width: 450px;
+    min-height: 100%;
+    margin: 0px 120px 0px 0px;
+    overflow-y: auto;
+}
+
+.column:hover {
+    background-color: #ebecf0;
+}
+
+.column .list-header {
+
+    text-align: center;
+}
+
+.task-card {
+    margin: 0px 12px;
+    background-color: #FAF0E6;
+    border-radius: 3px;
+    max-height: 100%;
+    position: relative;
+    width: 400px;
+}
+
+.task-content {
+
+}
+
+.list-header {
+    flex: 0 0 auto;
+    min-height: 20px;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.tasks {
+    flex: 1 1 auto;
+    margin: 0 4px;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 4px;
+    z-index: 1;
+}
+
+.task a {
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #091e4240;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 400px;
+    min-height: 300px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.task .client-fio {
+    font-size: 20px;
+}
+
+.task .line1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E490A6;
+    border-radius: 5px;
+}
+
+.line1 .task-id {
+    padding-left: 10px;
+}
+
+.task .task-description {
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.task .line4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.task .edit {
+    transition-duration: 0.4s;
+    width: 20px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.edit:hover {
+    background-color: #ebecf0;
+}
+
+.task .car-brand {
+    margin: 15px;
+    font-size: 20px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.task .plait {
+    display: flex;
+    margin: 10px;
+}
+
+.task .number {
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+    width: 95px;
+    text-align: center;
+}
+
+.task .region {
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+    width: 35px;
+    text-align: center;
+}
+
+.task-composer {
+    display: flex;
+    background-color: #d97927;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    width: 402px;
+
+}
+
+.task-composer:hover {
+    background-color: #FECEA8;
+    color: black;
+}
+
+.task-composer a{
+    font-size: 18px;
+    margin: 2px 0 8px 0px;
+    padding: 4px 4px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.task-composer .icon-add {
+    margin-right: 5px;
+}
