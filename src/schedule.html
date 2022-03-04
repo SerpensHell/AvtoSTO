@@ -3,8 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>AvtoSTO</title>
+    <link rel="stylesheet" href="../src/schedule.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+<header class="header">
+    <div class="header-content">
+        <div class="top-menu">
 
+            <div class="logo-left">
+                <a><img src="logo.jpg"> </a>
+            </div>
+
+
+            <div class="navbar">
+                <ul class="nav-navbar">
+
+                    <li class="search-field">
+                        <div class="header-search">
+                            <span class="search-icon"><i class="fa fa-search"></i> </span>
+                            <input type="search" placeholder="Поиск">
+                        </div>
+                    </li>
+
+                    <li class="notification">
+                        <button type="button">
+                            <span class="notification-icon"><i class="fa fa-bell-o fa-2x"></i> </span>
+                        </button>
+                    </li>
+
+                    <li class="account">
+                        <button type="button">
+                        <span class="account-item">
+                            <img src="account.png">
+                        </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="content">
+
+    <aside class="left-menu">
+        <ul class="sidebar">
+            <li class="task-board-menu">
+                <a class="task-board">
+                    <span class="left-menu-txt">Доска задач</span>
+                </a>
+            </li>
+
+            <li class="schedule-menu">
+                <a class="schedule">
+                    <span class="left-menu-txt">Расписание</span>
+                </a>
+            </li>
+
+            <li class="workers-menu">
+                <a class="workers">
+                    <span class="left-menu-txt">Работники</span>
+                </a>
+            </li>
+
+            <li class="clients-menu">
+                <a class="clients">
+                    <span class="left-menu-txt">Клиенты</span>
+                </a>
+            </li>
+
+        </ul>
+    </aside>
+
+    <div class="schedule-board">
+
+    </div>
+</div>
 </body>
 </html>
