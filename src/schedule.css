@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0 auto;
     overflow-x:hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -184,4 +185,27 @@ header {
      height: 100%;
      position: absolute;
      width: 100%;
+}
+
+.week-switch {
+    display: flex;
+    margin: 30px;
+    text-align: center;
+}
+
+.switch-buttons {
+    display: flex;
+}
+
+.back-switch {
+    margin: 0 20px;
+}
+
+.next-switch {
+    margin: 0 20px;
+}
+
+.selected-week {
+    text-align: center;
+    font-size: 24px;
 }
