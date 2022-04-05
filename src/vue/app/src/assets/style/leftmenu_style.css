@@ -1,0 +1,85 @@
+.wrapper {
+    overflow-x: hidden;
+}
+
+
+.left-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.left-menu {
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s, left 0.3s;
+    z-index: 600;
+    width: 220px;
+    top: var(--header-height, 84px);
+    background-color: #F5F5F5;
+    transform: translate3d(0, 0, 0);
+}
+
+.menu-btn {
+    height: 30px;
+}
+
+.menu-btn button{
+    width: 30px;
+    height: 30px;
+    margin-left: 190px;
+     border: 0;
+     cursor: pointer;
+     -webkit-border-radius: 5px;
+     background: transparent;
+     transition-duration: 0.4s;
+}
+
+.menu-btn button:hover {
+    background-color: #e0e0e5;
+}
+
+.left-menu li {
+   margin: 0;
+   padding: 30px 30px;
+   transition-duration: 0.4s;
+   font-size: 18px;
+
+}
+
+.left-menu li:hover {
+    background-color: #e0e0e5;
+}
+
+.left-menu a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.open-btn {
+    height: 50px;
+    width: 35px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.open-btn button {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    background: #F5F5F5;
+    transition-duration: 0.4s;
+}
+
+.open-btn button:hover {
+     background-color: #e0e0e5;
+}
+

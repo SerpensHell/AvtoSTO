@@ -13,7 +13,7 @@
 
                   <li class="search-field">
                       <div class="header-search">
-                          <span class="search-icon"><i class="fa fa-search"></i> </span>
+                          <span class="search-icon"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /> </span>
                               <input type="search" placeholder="Поиск">
                       </div>
                   </li>
@@ -38,5 +38,9 @@
       </div>
   </header>
 </template>
+
+export default {
+  name: "Header"
+}
 
 <style src="../assets/style/header_style.css"></style>
