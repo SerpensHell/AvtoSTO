@@ -13,7 +13,7 @@
 }
 
 .left-menu {
-    position: fixed;
+    position: absolute;
     height: 100%;
     bottom: 0;
     left: 0;
