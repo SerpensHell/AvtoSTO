@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
     <Header></Header>
-
+    <LeftMenu></LeftMenu>
+    <Board></Board>
 
   </div>
 </template>

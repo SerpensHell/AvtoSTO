@@ -14,13 +14,15 @@
     white-space: nowrap;
     width: 100%;
     font-family: 'Nunito', sans-serif;
+
 }
 
 .board .column {
+    overflow-x: scroll; /* прокрутка по горизонтали */
+    overflow-y: scroll; /* прокрутка по вертикали */
     width: 450px;
-    min-height: 100%;
-    margin: 0px 120px 0px 0px;
-    overflow-y: auto;
+    min-height: 50%;
+    margin: 0px 100px 0px 0px;
 }
 
 .column:hover {
@@ -28,7 +30,6 @@
 }
 
 .column .list-header {
-
     text-align: center;
 }
 
