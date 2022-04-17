@@ -10,7 +10,9 @@
 html, body {
     height: 100%;
     margin: 0 auto;
-    overflow-x:hidden;
+    overflow:hidden;
     font-family: 'Nunito', sans-serif;
+    width: 100%;
+    position:absolute;
 }
 </style>
