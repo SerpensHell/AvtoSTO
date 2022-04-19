@@ -212,13 +212,14 @@ header {
 .header-column-items  {
     list-style-type: none;
     padding:0;
+    margin-bottom: 0;
 }
 
 .header-column-items li {
     height: 35px;
     border-top: solid black;
     border-width: 1px;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 5px;
     cursor: pointer;
     transition-duration: 0.4s;
     display: flex;
@@ -228,6 +229,7 @@ header {
 .header-column-items li:hover {
     background-color: #FECEA8;
     color: white;
+
 }
 
 .account-menu {
