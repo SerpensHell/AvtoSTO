@@ -13,6 +13,8 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 import { faPlus} from '@fortawesome/free-solid-svg-icons'
 import { faPencil} from '@fortawesome/free-solid-svg-icons'
 import { faRubleSign} from '@fortawesome/free-solid-svg-icons'
+import Datepicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -26,7 +28,7 @@ library.add(faPlus)
 library.add(faPencil)
 library.add(faRubleSign)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
+app.component('Datepicker', Datepicker);
 
 Vue.config.productionTip = false
 
